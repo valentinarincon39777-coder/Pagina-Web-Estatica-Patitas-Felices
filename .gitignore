@@ -1,0 +1,23 @@
+# --- Windows ---
+# Ignora archivos temporales del sistema que Windows crea automáticamente
+Thumbs.db
+desktop.ini
+$RECYCLE.BIN/
+
+# --- VS Code ---
+# Ignora las configuraciones personales de tu editor para que no afecten a otros
+.vscode/
+*.code-workspace
+
+# --- Archivos de registro y caché ---
+# Evita que se suban historiales de errores o carpetas de caché
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.eslintcache
+
+# --- Multimedia (Opcional) ---
+# Si tienes imágenes muy pesadas que solo usas de prueba, puedes ignorarlas
+# Pero para tu proyecto de mascotas, normalmente las querrás subir.
+# *.psd
+# *.ai
