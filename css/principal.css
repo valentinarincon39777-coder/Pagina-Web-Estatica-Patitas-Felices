@@ -99,6 +99,29 @@ importante: las divisiones del tiempo, depende de la cantidad de imagenes, este 
   }
 }
 
+@keyframes subida-elemento {
+  from {
+    transform: translateY(35px);
+    
+  } /*al principio no se ve por el opacity 0, ya luego con opacity 1 aparece */
+  to {
+    transform: translate(0);
+   
+  }
+}
+
+
+@keyframes boton-salton {
+  0%{transform: scale(1);}
+  50%{transform: scale(1.3);}
+    100%{transform: scale(1);}
+}
+
+a:hover{animation: boton-salton 1s infinite;}
+
+li a:hover{background-color: #967bb6; border-radius: 40px;width: fit-content; 
+padding: 10px;}
+
 /* GENERAL BODY*/
 h1 {
   position: absolute;
@@ -155,6 +178,7 @@ a {
   border-radius: 40px;
   width: 80%;
   margin: 40px auto;
+  animation: subida-elemento 1.5s ease-in-out
 }
 
 #logo-nav-slogan img {
@@ -174,7 +198,7 @@ a {
   list-style: none;
   font-size: 30px;
   background-color: #a8c3b0;
-  padding: 10px;
+  padding: 20px;
   border-radius: 40px;
   width: fit-content;
   text-align: center;
@@ -219,6 +243,8 @@ a {
   background-color: #a8c3b0;
   padding: 40px;
   border-radius: 40px;
+  animation: subida-elemento 1.5s ease-in-out; 
+
 }
 
 #carrusel-fotos {
@@ -279,7 +305,6 @@ a {
 
   gap: 25px;
   font-size: 20px;
-  
 }
 
 /*flex 1 lo q hace es: que ambos bloques ocupen el mismo espacio, mismo tamañno, mismo ancho*/
@@ -416,7 +441,8 @@ eso de "nth" significa en ingles "el elemento numero.." y "child" pq serian los 
 
 .bloque-rescate p {
   font-size: 30px;
-  width: 300px; line-height: 1.8;
+  width: 300px;
+  line-height: 1.8;
 }
 
 .bloque-rescate h4 {
@@ -472,7 +498,7 @@ form {
   background-color: #a8c3b0;
   padding: 40px;
   width: 50%;
-   max-width: 700px;
+  max-width: 700px;
   margin: 50px auto;
   border-radius: 40px;
   display: flex;
@@ -505,6 +531,8 @@ form button {
   max-width: 300px;
   align-self: center;
 }
+
+form button:hover{cursor: pointer;}
 
 /*FOOTER */
 
