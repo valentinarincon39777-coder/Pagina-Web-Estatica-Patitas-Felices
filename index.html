@@ -10,11 +10,12 @@
       name="description"
       content="Damos amor y hogar a animales rescatados. ¡Adopta, dona o sé voluntario en Patitas Felices!"
     />
-    <link rel="icon" href="imagenes/LOGO.png" />
+    <link rel="icon" href="iconos/LOGO.png" />
+    <link rel="stylesheet" href="css/principal.css" />
   </head>
 
   <body>
-    <!--HEADER -------------------------------------------------------------------------------- -->
+    <!--HEADER  -------------------------------------------------------------------------------- -->
 
     <header>
       <div id="SOS">
@@ -23,32 +24,324 @@
           recibir ayuda
         </p>
       </div>
-      <div id="logo-nombre">
-        <img
-          src="imagenes/LOGO.png"
-          alt="logo de la Fundación Patitas Felices"
-        />
-        <h1>Fundación Patitas Felices</h1>
-      </div>
+      <!--LOGO Y NAV  -------------------------------------------------------------------------------- -->
+      <section id="logo-nav-slogan">
+        <div id="logo-h1">
+          <img
+            src="iconos/LOGO.png"
+            alt="logo de la Fundación Patitas Felices"
+          />
+          <h1>Fundación Patitas Felices</h1>
+        </div>
 
-      <div id="slogan-boton">
-        <h3>“Un hogar responsable puede cambiar una vida.”</h3>
-        <a href="adopcion.html">¡Adopta ya!</a>
-      </div>
-      <!--NAV  -------------------------------------------------------------------------------- -->
+        <div id="nav-slogan">
+          <nav>
+            <ul>
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="#contacto">Contacto</a></li>
+              <li><a href="nosotros.html">Nosotros</a></li>
+              <li><a href="donacion.html">Donación</a></li>
+              <li><a href="adopcion.html">Adopción </a></li>
 
-      <nav>
-        <ul>
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="#contacto">Contacto</a></li>
-          <li><a href="nosotros.html">Quienes somos</a></li>
-          <li><a href="donacion.html">Donación</a></li>
-          <li><a href="adopcion.html">Adopción </a></li>
+              <li><a href="voluntario.html">Voluntariado</a></li>
+            </ul>
+          </nav>
 
-          <li><a href="voluntario.html">Voluntariado</a></li>
-        </ul>
-      </nav>
+          <div id="slogan-boton">
+            <h3>“Un hogar responsable puede cambiar una vida.”</h3>
+            <a href="adopcion.html">¡Adopta ya!</a>
+          </div>
+        </div>
+      </section>
     </header>
+
+    <!--SECTION carrusel fotos introducctorias   -------------------------------------------------------------------------------- -->
+
+    <section id="carrusel-introductorio">
+      <div id="carrusel-fotos">
+        <ul>
+          <li>
+            <img
+              src="imagenes/carrrusel1.jpg"
+              alt="instalaciones de Fundacion patitas felices"
+            />
+          </li>
+          <li>
+            <img
+              src="imagenes/carrusel2.jpg"
+              alt=" familia feliz con perro adoptado"
+            />
+          </li>
+          <li>
+            <img
+              src="imagenes/carrusel3.jpg"
+              alt=" actividad de adopcion realizada por la Fundación"
+            />
+          </li>
+          <li>
+            <img
+              src="imagenes/carrusel4.jpg"
+              alt="voluntarios limpiando y alimentando animales de la Fundación"
+            />
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!--SECTION  labor e impacto  -------------------------------------------------------------------------------- -->
+    <section id="labor-impacto">
+      <div id="bloques-labor-impacto">
+        <div class="bloque">
+          <div class="info-arriba">
+            <h3>Nuestro labor</h3>
+            <img src="iconos/labor.png" />
+            <p>
+              En Patitas Felices trabajamos en el rescate, atención y
+              reubicación de perros y gatos en situación de abandono o
+              vulnerabilidad. Nuestro equipo coordina jornadas de adopción
+              responsable, atención veterinaria básica, procesos de recuperación
+              y campañas de concientización sobre el cuidado adecuado de los
+              animales. También impulsamos actividades educativas sobre
+              esterilización, prevención del maltrato y tenencia responsable de
+              mascotas dentro de la comunidad. Cada rescate implica seguimiento,
+              alimentación, cuidados médicos y acompañamiento hasta encontrar un
+              hogar seguro y estable para cada animal.
+            </p>
+          </div>
+          <a href="donacion.html">Dona ahora</a>
+        </div>
+
+        <div class="bloque">
+          <div class="info-arriba">
+            <h3>Nuestro impacto</h3>
+            <img src="iconos/impacto.png" alt="" />
+            <ul id="lista-impacto">
+              <li>Más de 750 animales rescatados desde 2021.</li>
+              <li>590 adopciones responsables completadas.</li>
+              <li>360 esterilizaciones realizadas en jornadas comunitarias.</li>
+              <li>Red de apoyo con 75 voluntarios activos.</li>
+              <li>
+                Presencia en 12 jornadas de adopción y salud animal durante el
+                último año.
+              </li>
+              <li>
+                Atención de casos de abandono, desnutrición y recuperación
+                postoperatoria.
+              </li>
+            </ul>
+          </div>
+          <a href="voluntario.html">Sé voluntario</a>
+        </div>
+      </div>
+    </section>
+
+    <!--SECTION  carrusel testimonios -------------------------------------------------------------------------------- -->
+
+    <section id="testimonios">
+     
+      <div id="carrusel-testimonios">
+        <!--T1 -------------------------------------------------------------------------------- -->
+        <div class="bloque-testimonio" id="testimonio1">
+          <div class="tarjeta-testimonio">
+            <img
+              src="imagenes/testimonio1.jpg"
+              alt="Mujer feliz con perros adoptados"
+            />
+            <p>
+              “Adopté a Bruno y Clara hace casi un año. La primera semana Bruno
+              escondió tres medias, rompió una planta y se quedó dormido dentro
+              de una caja de ropa limpia. Honestamente, fue imposible no
+              encariñarnos. La fundación nos ayudó bastante durante el proceso y
+              siempre estuvieron pendientes de cómo se estaban adaptando.”-
+              Daniela Rojas
+            </p>
+          </div>
+
+          <div class="flechas-carrusel">
+            <a href="#testimonio3"> &#10094; </a>
+            <!--izquierda-->
+            <a href="#testimonio2"> &#10095; </a>
+            <!--derecha-->
+          </div>
+        </div>
+
+        <!-- &#10094; &#10095; se llaman  Entidades de Carácter HTML.
+        Sirven para mostrar símbolos especiales sin necesidad de 
+        cargar imágenes externas, lo que hace que la página cargue
+         más rápido.-->
+
+        <!--T2 -------------------------------------------------------------------------------- -->
+        <div class="bloque-testimonio" id="testimonio2">
+          <div class="tarjeta-testimonio">
+            <img
+              src="imagenes/testimonio2.jpg"
+              alt="Familia feliz con gatos adoptados"
+            />
+            <p>
+              “En casa queríamos adoptar desde hace tiempo, pero teníamos muchas
+              dudas porque tenemos dos niños pequeños. La fundación nos orientó
+              desde el inicio y nos recomendaron un gato que se adaptaba bien a
+              familias con niños. Hoy ‘Milo’ ya es parte de la rutina de
+              todos.”-Patricia Gómez
+            </p>
+          </div>
+
+          <div class="flechas-carrusel">
+            <a href="#testimonio1"> &#10094; </a>
+            <!--izquierda-->
+            <a href="#testimonio3"> &#10095; </a>
+            <!--derecha-->
+          </div>
+        </div>
+        <!--T3 -------------------------------------------------------------------------------- -->
+        <div class="bloque-testimonio" id="testimonio3">
+          <div class="tarjeta-testimonio">
+            <img
+              src="imagenes/testimono3.jpg"
+              alt="Hombre ayudando a perro adoptado"
+            />
+            <p>
+              “Encontré a Luna después de un accidente en la carretera. Pensé
+              que no iba a sobrevivir. Me comuniqué con Patitas Felices y en
+              menos de una hora ya estaban ayudando con el traslado y la
+              atención veterinaria. Verla recuperarse y luego encontrarle una
+              familia fue algo que todavía me cuesta explicar.” - Miguel Herrera
+            </p>
+          </div>
+
+          <div class="flechas-carrusel">
+            <a href="#testimonio2"> &#10094; </a>
+            <!--izquierda-->
+            <a href="#testimonio1"> &#10095; </a>
+            <!--derecha-->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--SECTION  mosaico rescates-------------------------------------------------------------------------------- -->
+    <section id="mosaico-rescates">
+      <h3>Rescates destacados</h3>
+
+      <div id="rescates">
+        <!--R1 -------------------------------------------------------------------------------- -->
+        <div class="bloque-rescate">
+          <div class="rescate-imagen">
+            <h4>Rescate de “Max”</h4>
+            <img src="imagenes/rescate1.jpg" alt="Perro siendo rescatado" />
+          </div>
+          <p>
+            Perro encontrado en condición de desnutrición cerca de una zona
+            comercial. Recibió tratamiento veterinario durante dos meses antes
+            de ser adoptado.
+          </p>
+        </div>
+
+        <!--R2 -------------------------------------------------------------------------------- -->
+
+        <div class="bloque-rescate">
+          <div class="rescate-imagen">
+            <h4>Recuperación de “Nina”</h4>
+            <img
+              src="imagenes/rescate2.png"
+              alt="Rescate de gato con pata enferma"
+            />
+          </div>
+          <p></p>
+        </div>
+
+        <!--R3-------------------------------------------------------------------------------- -->
+        <div class="bloque-rescate">
+          <div class="rescate-imagen">
+            <h4>Rescate de camada abandonada en Betania</h4>
+            <img
+              src="imagenes/rescate3.png"
+              alt="Rescate de perritos y gatitos"
+            />
+          </div>
+          <p>
+            Se rescataron cinco cachorros y dos gatos recién nacidos encontrados
+            dentro de cajas en un terreno vacío. Todos lograron ser ubicados en
+            hogares temporales.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!--SECTION  contacto-------------------------------------------------------------------------------- -->
+    <section id="contacto">
+      <h3>Contacto</h3>
+
+      <div id="links-contactos">
+        <ul>
+          <li><a href="donacion.html">Contacto DONACION</a></li>
+          <li><a href="adopcion.html">Contcacto ADOPCION</a></li>
+          <li><a href="voluntario.html">Contacto VOLUNTARIADO</a></li>
+        </ul>
+      </div>
+
+      <h4>Contacto para consultas generales</h4>
+
+      <form>
+        <div>
+          <label for="nombre-persona">Ingresa tu nombre y apellido: </label>
+          <input
+            type="text"
+            id="nombre-persona"
+            name="nombre"
+            required
+            placeholder="Nombre y apellido"
+          />
+        </div>
+
+        <div>
+          <label for="ciudad-persona">Ingresa tu ciudad </label>
+          <input
+            type="text"
+            id="ciudad-persona"
+            name="ciudad"
+            required
+            placeholder="Ciudad"
+          />
+        </div>
+
+        <div>
+          <label for="email-persona"> Ingresa tu correo electrónico: </label>
+          <input
+            type="email"
+            id="email-persona"
+            name="email"
+            required
+            placeholder="Correo electrónico"
+          />
+        </div>
+
+        <div>
+          <label for="numero-persona">
+            Ingresa tu número telefónico (opciona):
+          </label>
+          <input
+            type="tel"
+            id="numero-persona"
+            name="numero"
+            placeholder="Número telefónico"
+          />
+        </div>
+
+        <div>
+          <label for="mensaje-adicional">Comentario adicional: </label>
+          <input
+            type="textarea"
+            id="mensaje-adicional"
+            name="mensaje"
+            placeholder="Escribe aquí"
+            rows="4"
+          />
+        </div>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
 
     <!--FOOTER  -------------------------------------------------------------------------------- -->
 
@@ -75,23 +368,24 @@
 
         <ul id="iconos-redes">
           <li>
-            <a
-              target="_blank"
-              href="https://www.bing.com/ck/a?!&&p=ee8f3308b79423e4f43200ce71fa727e98bec54c34043aa3aa71016391704406JmltdHM9MTc3ODE5ODQwMA&ptn=3&ver=2&hsh=4&fclid=032356cc-a6a7-6abc-21d0-418da7fb6b3a&psq=ig&u=a1aHR0cHM6Ly93d3cuaW5zdGFncmFtLmNvbS8"
-              >Instagram</a
-            >
+            <a target="_blank" href="https://www.instagram.com/">Instagram</a>
           </li>
           <li>
-            <a
-              target="_blank"
-              href="https://www.bing.com/ck/a?!&&p=1b84dd0ed6584cc5fe2c8222fac749f34fe65d797d0467c6161c16192d18a824JmltdHM9MTc3ODE5ODQwMA&ptn=3&ver=2&hsh=4&fclid=032356cc-a6a7-6abc-21d0-418da7fb6b3a&psq=tiktok&u=a1aHR0cHM6Ly93d3cudGlrdG9rLmNvbS8"
-              >Tik Tok</a
-            >
-          </li>patitasfelices@gmail.com
+            <a target="_blank" href="https://www.tiktok.com/">Tik Tok</a>
           </li>
+
+          <li>patitasfelices@gmail.com</li>
         </ul>
       </div>
-      <div id="copyrigth"> &copy;2026 Fundación Patitas Felices | Desarrollado con fines educativos por <a href="https://github.com/valentinarincon39777-coder">Valentina Rincon</a>  </div>
+      <div id="copyright">
+        <p>
+          &copy;2026 Fundación Patitas Felices | Desarrollado con fines
+          educativos por
+          <a href="https://github.com/valentinarincon39777-coder"
+            >Valentina Rincon</a
+          >
+        </p>
+      </div>
     </footer>
   </body>
 </html>

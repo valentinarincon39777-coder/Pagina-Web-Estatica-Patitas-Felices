@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+.arvo-regular {
+  font-family: "Arvo", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.arvo-bold {
+  font-family: "Arvo", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.arvo-regular-italic {
+  font-family: "Arvo", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.arvo-bold-italic {
+  font-family: "Arvo", serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.lato-thin {
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.lato-light {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.lato-regular {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.lato-bold {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+* {
+  padding: 0;
+
+  margin: 0;
+
+  box-sizing: border-box;
+}
+
+/* RESPONSIVE: width:100%;
+max-width:
+flex-wrap
+gap
+padding
+*/
+
+/*KEYFRAMES*/
+
+@keyframes sliding {
+  0% {
+    margin-left: 0;
+    /*tmn podria usar transfrom:translateX(0%)*/
+  }
+  20% {
+    margin-left: 0;
+  }
+
+  25% {
+    margin-left: -100%;
+    /*tmn podria usar transfrom:translateX(-25%)*/
+  }
+
+  45% {
+    margin-left: -100%;
+  }
+
+  50% {
+    margin-left: -200%;
+    /*tmn podria usar transfrom:translateX(-50)*/
+  }
+  70% {
+    margin-left: -200%;
+  }
+  75% {
+    margin-left: -300%;
+    /*tmn podria usar transfrom:translateX(-75%)*/
+  }
+  100% {
+    margin-left: -300%;
+  }
+}
+
+/*explicacion del keyframe sliding: 0% 0 nos dice que cuendo la animacion acaba de empezar, el carrusel no se mueve, se muestra imagen 1 
+luego, en 20% (o sea durante el 20% inicial del tiempo) la image sigue quieta, o sea que el usuario alcanzara a verla
+Despues llega 25% y la fila completa se mueve 100% hacia la izquierda (por ello el - para 100%) entonces aparece la imagen 2.
+Cada imagen va a ocupar el ancho completo del carrusel visible y por eso vemos 0% imagen 1 , -100% imagen 2, -200% imagen 3 y así ...
+importante notar que la trancision tiene movimientos y pausas, durante los 5% de tiempo intercalados entre cada imagen ocurre la transicion, luego se queda quieta para mostrar la siguiente.
+ahora, pq margin left? por que tenemos q mover toooda la fila de imagenes horizontalemnete, entonces empuja la fila hazia la IZQUIERDA 
+usualmente margin left agregaria espacio a la izquierda si hacemos margin-left:20px, PERO aca estamos usando valores negativos entonces el elemento es el q se meueve a la izquierda(hay q imaginar que es un plano cartesiano y el punto (0,0) esta en el elemento, entonces si le ponemos la coordenada -100 pss la imagen se mueve a -100 y sale del plano de vision)
+importante: las divisiones del tiempo, depende de la cantidad de imagenes, este keyframe justo como lo tengo funciona para 4 imagenes, peor para 5 tendria q ajustar las divisiones, habria más divisiones
+ */
+
+/* GENERAL BODY*/
+h1 {
+  position: absolute;
+  left: -99999999px;
+}
+/*para ocultar h1 ya q ya lo tenemos en el logo...*/
+body {
+  background-color: #fdf5e6;
+  color: #4a4a4a;
+}
+h2,
+h3,
+h4 {
+     font-family: "Arvo", serif;
+  font-weight: 600;
+  font-style: normal;
+ 
+}
+p,
+li,
+a,
+label,
+a {
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  font-weight: 400;
+  color: #4a4a4a;
+}
+
+a {
+  font-weight: 600;
+}
+
+/*HEADER*/
+#SOS {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  padding-bottom: 0px;
+  font-size: 20px;
+}
+
+#logo-nav-slogan {
+  background-color: #d9a5b3;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 30px;
+  border-radius: 40px;
+  width: 80%;
+  margin: 40px auto;
+}
+
+#logo-nav-slogan img {
+  max-width: 250px;
+  width: 100%;
+}
+
+#logo-nav-slogan ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+#logo-nav-slogan li {
+  list-style: none;
+  font-size: 30px;
+  background-color: #a8c3b0;
+  padding: 10px;
+  border-radius: 40px;
+  width: fit-content;
+  text-align: center;
+  
+}
+
+#logo-nav-slogan a {
+  text-decoration: none;
+}
+
+#nav-slogan {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+#slogan-boton {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+#slogan-boton h3 {
+  font-size: 40px;
+  width: 100%;
+  max-width: 750px;
+  text-align: center;
+
+}
+
+#slogan-boton a {
+  background-color: #967bb6;
+  border-radius: 40px;
+  padding: 20px;
+  font-size: 30px;
+}
+
+/*SECCION carrusel */
+
+#carrusel-introductorio {
+  background-color: #a8c3b0;
+  padding: 40px;
+  border-radius: 40px;
+}
+
+#carrusel-fotos {
+  max-width: 1280px;
+  width: 100%;
+  height: auto;
+  margin: 50px auto 0;
+  overflow: hidden;
+}
+
+#carrusel-fotos ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  width: 400%;
+  animation: sliding 12s infinite alternate ease-in-out;
+
+  /*alternate sirve para que una vez llega al final se regrese otra vez, y como tengo 4 imagenes le puse 12 segundos para q cada imagen ocupe 3 segundos*/
+  /*ease in out para q empoece suave, aceelre y termine suave*/
+}
+
+#carrusel-fotos li {
+  width: 100%;
+  list-style: none;
+}
+
+#carrusel-fotos img {
+  width: 100%;
+  border: 8px solid #967bb6;
+  border-radius: 40px;
+}
+
+/*SECCION labor impacto*/
+
+#bloques-labor-impacto {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  justify-content: space-between;
+  align-items: stretch;
+  margin: auto;
+  padding: 60px 0;
+  width: 75%;
+}
+
+.bloque {
+  background-color: #d9a5b3;
+  border-radius: 40px;
+  border: 8px solid #967bb6;
+  padding: 40px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;  /* space beetween a ambos les de el diferente espacio entre cada elemento para que se vea simetrico, sin esto el boton de "donar ahora" quedaria mas arriba*/
+
+  gap: 25px;
+  font-size: 20px;
+  line-height: 1.8;
+}
+
+/*flex 1 lo q hace es: que ambos bloques ocupen el mismo espacio, mismo tamañno, mismo ancho*/
+/*flex 1 hace magia: hace q un bloque crezca para ocupar el espacio disponible. si tienes dos cajas(como es el caso con labor impacto) ambas ocupan espacio EQUITATIVAMENTE
+si tenemos por ejemplo dos cajas pero queremos que una de ellas ocupe el doble de espacio a esa le ponemos flex:2 y a la otras flex:1 */
+.bloque h3 {
+  
+  text-align: center;
+  font-size: 40px;
+}
+.bloque a{text-align: center;
+text-decoration:none;
+font-size: 30px;
+background-color: #a8c3b0;
+border-radius: 40px;
+padding: 20px;
+
+width: fit-content;
+/*esto es para q mis botones solo tengan de tamaño lo que ocupa el texto*/
+align-self: center;
+/*el align self sirve paraq ue se alinee la cajita de mi boton. el text align alinea el texto nada mas, pero yo tmb quiero el boton alineado*/
+}
+
+.bloque p, li{font-size: 30px; }
+
+.info-arriba img{width: 100%;
+max-width: 150px;
+align-self: center;}
+
+.info-arriba{display: flex;
+flex-direction: column;
+justify-content: space-between;
+gap: 20px;
+}
+
+
+
+/*HEADER*/
