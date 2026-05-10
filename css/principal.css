@@ -6,35 +6,9 @@
   font-style: normal;
 }
 
-.arvo-bold {
-  font-family: 'Arvo', serif;
-  font-weight: 700;
-  font-style: normal;
-}
 
-.arvo-regular-italic {
-  font-family: 'Arvo', serif;
-  font-weight: 400;
-  font-style: italic;
-}
 
-.arvo-bold-italic {
-  font-family: 'Arvo', serif;
-  font-weight: 700;
-  font-style: italic;
-}
 
-.lato-thin {
-  font-family: 'Lato', sans-serif;
-  font-weight: 100;
-  font-style: normal;
-}
-
-.lato-light {
-  font-family: 'Lato', sans-serif;
-  font-weight: 300;
-  font-style: normal;
-}
 
 .lato-regular {
   font-family: 'Lato', sans-serif;
@@ -42,11 +16,7 @@
   font-style: normal;
 }
 
-.lato-bold {
-  font-family: 'Lato', sans-serif;
-  font-weight: 700;
-  font-style: normal;
-}
+
 
 * {
   padding: 0;
@@ -110,7 +80,6 @@ importante: las divisiones del tiempo, depende de la cantidad de imagenes, este 
  */
 
 @keyframes sliding2 {
-
   0% {
     margin-left: 0;
   }
@@ -134,7 +103,6 @@ importante: las divisiones del tiempo, depende de la cantidad de imagenes, este 
   100% {
     margin-left: -200%;
   }
-
 }
 
 /* GENERAL BODY*/
@@ -142,7 +110,7 @@ h1 {
   position: absolute;
   left: -99999999px;
 }
-/*para ocultar h1 ya q ya lo tenemos en el logo...*/
+/*para ocultar h1 ya q ya lo tenemos en el logo entonces no va bien con diseño volver a poner el nombre...*/
 body {
   background-color: #fdf5e6;
   color: #4a4a4a;
@@ -178,7 +146,7 @@ a {
   align-items: center;
   padding: 40px;
   padding-bottom: 0px;
-  font-size: 20px;
+  font-size: 30px;
 }
 
 #logo-nav-slogan {
@@ -302,6 +270,8 @@ a {
   margin: auto;
   padding: 60px 0;
   width: 75%;
+   flex-wrap: wrap;
+
 }
 
 .bloque {
@@ -359,80 +329,239 @@ li {
 }
 
 /*SECTION testimonios*/
- #titulo-testimonios{font-size: 40px;
-text-align: center; padding:40px; padding-top: 80px;}
+#titulo-testimonios {
+  font-size: 40px;
+  text-align: center;
+  padding: 40px;
+  padding-top: 80px;
+}
 
-#testimonios{overflow: hidden;
-background-color: #a8c3b0; border-radius: 40px;}
+#testimonios {
+  overflow: hidden;
+  background-color: #a8c3b0;
+  border-radius: 40px;
+}
 
-
-#carrusel-testimonios{width: 300%;
+#carrusel-testimonios {
+  width: 300%;
   display: flex;
-height: auto;
-animation: sliding2 13s infinite alternate ease-in-out;
-
+  height: auto;
+  animation: sliding2 13s infinite alternate ease-in-out;
 }
 
-#carrusel-testimonios ul{display:flex;
-padding:60px;
-width:100%;
-align-items: center;
-justify-content: center;
+#carrusel-testimonios ul {
+  display: flex;
+  padding: 60px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
 
-gap: 70px;
-
+  gap: 70px;
+  flex-wrap: wrap;
 }
 
-#carrusel-testimonios li{list-style: none;}
+#carrusel-testimonios li {
+  list-style: none;
+}
 
-#carrusel-testimonios p{max-width: 700px;  width: 100%;  }
+#carrusel-testimonios p {
+  max-width: 700px;
+  width: 100%;
+}
 
-#carrusel-testimonios  li img{ border-radius:40px; border:8px solid #967bb6; width:100%}
-
+#carrusel-testimonios li img {
+  border-radius: 40px;
+  border: 8px solid #967bb6;
+  width: 100%;
+}
 
 /*SECTION rescates (con laayaout zigzag) */
 
-#mosaico-rescates h3{font-size: 40px;
-text-align: center; padding-top: 100px;}
- 
-
-
-#rescates{display: flex;
-gap:60px; flex-direction: column;
-width: 80%;
-margin: 50px auto;}
-
-
-
-.bloque-rescate{display: flex;
-  
-gap: 40px;
-justify-content: center;
-align-items: center;
-flex:1;
-border-radius: 40px;
-padding: 40px;
-border: 8px solid #a8c3b0;
+#mosaico-rescates h3 {
+  font-size: 40px;
+  text-align: center;
+  padding-top: 100px;
 }
 
-.bloque-rescate:nth-child(even){
+#rescates {
+  display: flex;
+  gap: 60px;
+  flex-direction: column;
+  width: 65%;
+  margin: 50px auto;
+}
+
+.bloque-rescate:nth-child(even) {
   flex-direction: row-reverse;
 }
+
+.bloque-rescate {
+  display: flex;
+
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  border-radius: 40px;
+  padding: 40px;
+  border: 8px solid #a8c3b0;
+  flex-wrap: wrap;
+  
+  
+}
+
+
 /*IMPORTANTE: como se logra el sigzag? usando .bloque-rescate:nth-child(even){
   flex-direction: row-reverse;
 ---esto hace lo siguiente:  :nth-child(even) selecciona los elementos pares (o sea el bloque 2) y a ese bloque par le hace 
 un row revserse, o sea que si normalmente el queda como izquierda- derecha, pasa a ser derecha-izquierda .
 eso de "nth" significa en ingles "el elemento numero.." y "child" pq serian los elemntos hijos y "even" pq es los pares */
-.bloque-rescate img{width: 100%; max-width: 850px ; border-radius: 40px;}
+.bloque-rescate img {
+  width: 100%;
+  max-width: 700px;
+  border-radius: 40px;
+}
 
-.bloque-rescate p{font-size: 30px;}
+.bloque-rescate p {
+  font-size: 30px;
+  width: 300px;
+  
+}
 
-.bloque-rescate h4{font-size: 35px;}
+.bloque-rescate h4 {
+  font-size: 35px;
+}
 
-#rescate1{background-color: #967bb6;}
-#rescate2{background-color: #d9a5b3;}
-#rescate3{background-color: #967bb6;}
+#rescate1 {
+  background-color: #967bb6;
+}
+#rescate2 {
+  background-color: #d9a5b3;
+}
+#rescate3 {
+  background-color: #967bb6;
+}
+
+/*SECTION contacto*/
+
+#contacto h3 {
+  font-size: 40px;
+  text-align: center;
+  padding-top: 70px;
+}
+
+#links-contactos ul {
+  padding: 30px;
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style: none;
+}
+#links-contactos li {
+  background-color: #d9a5b3;
+  padding: 15px;
+  border-radius: 40px;
+}
+
+#links-contactos a {
+  text-decoration: none;
+  font-size: 30px;
+}
+
+#contacto h4 {
+  font-size: 40px;
+  text-align: center;
+  padding: 10px;
+  padding-top: 50px;
+}
+
+form {
+  background-color: #a8c3b0;
+  padding: 30px;
+  width: 50%;
+  margin: 50px auto;
+  border-radius: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+  align-items: start;
+}
+
+form label {
+  font-size: 30px;
+}
+form input {
+  font-size: 25px;
+  border-radius: 40px;
+  border: none;
+  background-color: #fdf5e6;
+  padding: 10px;
+  width: 100%;
+  max-width: 500px;
+}
+
+form button {
+  font-size: 30px;
+  border-radius: 40px;
+  padding: 15px;
+  border: none;
+  background-color: #967bb6;
+  width: 100%;
+  max-width: 300px;
+  align-self: center;
+  
+}
 
 
+
+/*FOOTER */
+
+footer{background-color: #d9a5b3
+; padding: 20px; padding-top:40px;}
+
+#footer-info{display: flex;
+flex-direction: row;
+gap:10%;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+}
+
+
+footer img{max-width: 200px;}
+
+#logo-slogan{display: flex;
+flex-direction: column; align-items: center;gap:10px
+}
+#logo-slogan h3{width: 500px; font-size: 25px; text-align: center;}
+
+#ubi{font-size: 25px;}
+
+#iconos-redes{list-style: none; 
+display: flex;
+flex-direction: column;
+gap:15px;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+
+}
+
+#iconos-redes li{font-size: 25px;}
+.iconos-redes{width: 100px;}
+
+
+
+
+
+
+
+
+
+
+#copyright{text-align: center; padding-top: 40px; font-size: 21px;}
 
 
