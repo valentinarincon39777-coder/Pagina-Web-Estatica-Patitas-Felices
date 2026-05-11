@@ -41,6 +41,10 @@
     100%{transform: scale(1);}
 }
 
+.sombra {
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
 a:hover{animation: boton-salton 1s infinite;}
 
 li a:hover{background-color: #967bb6; border-radius: 40px;width: fit-content; 

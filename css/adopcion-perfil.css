@@ -24,28 +24,41 @@
 @keyframes subida-elemento {
   from {
     transform: translateY(35px);
-    
   } /*al principio no se ve por el opacity 0, ya luego con opacity 1 aparece */
   to {
     transform: translate(0);
-   
   }
 }
 
-
-
 @keyframes boton-salton {
-  0%{transform: scale(1);}
-  50%{transform: scale(1.3);}
-    100%{transform: scale(1);}
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.3);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
-a:hover{animation: boton-salton 1s infinite;}
-li a:hover{background-color: #967bb6; border-radius: 40px;width: fit-content; 
-padding: 10px;}
-
+a:hover {
+  animation: boton-salton 1s infinite;
+}
+li a:hover {
+  background-color: #967bb6;
+  border-radius: 40px;
+  width: fit-content;
+  padding: 10px;
+}
 
 /* GENERAL BODY*/
+
+.sombra {
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+
 h1 {
   position: absolute;
   left: -99999999px;
@@ -101,8 +114,7 @@ a {
   border-radius: 40px;
   width: 80%;
   margin: 40px auto;
-  animation: subida-elemento 1.5s ease-in-out; 
-
+  animation: subida-elemento 1.5s ease-in-out;
 }
 
 #logo-nav-slogan img {
@@ -122,7 +134,7 @@ a {
   list-style: none;
   font-size: 30px;
   background-color: #a8c3b0;
-  padding: 10px;
+  padding: 20px;
   border-radius: 40px;
   width: fit-content;
   text-align: center;
@@ -161,6 +173,80 @@ a {
   font-size: 30px;
 }
 
+/* PERFIL MASCOTA */
+
+#tarjeta-perfil {
+  background-color: #a8c3b0;
+  border-radius: 40px;
+  width: 75%;
+  margin: 50px auto;
+  padding: 40px;
+}
+
+#foto-boton {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+#foto-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+}
+
+#textos {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.descripcion-caracteristicas {
+  background-color: #d9a5b3;
+  padding: 40px;
+  padding-top: 5px;
+  border-radius: 40px;
+  max-width: 500px;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+#perfil-mascota p {
+  font-size: 50px;
+  text-align: center;
+  font-weight: 600;
+  padding-top: 50px;
+}
+
+#tarjeta-perfil p {
+  font-size: 35px;
+}
+
+#tarjeta-perfil ul {
+  font-size: 25px;
+  line-height: 1.8;
+}
+
+#tarjeta-perfil img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 40px;
+}
+
+#foto-boton a {
+  text-decoration: none;
+  font-size: 40px;
+  background-color: #967bb6;
+  padding: 20px;
+  border-radius: 40px;
+}
 
 /*FOOTER */
 

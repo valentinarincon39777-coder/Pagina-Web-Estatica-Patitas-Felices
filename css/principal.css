@@ -123,6 +123,16 @@ li a:hover{background-color: #967bb6; border-radius: 40px;width: fit-content;
 padding: 10px;}
 
 /* GENERAL BODY*/
+
+
+
+.sombra {
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+/* esta clase llamada sombra la agregue en ciertos bloques, le da cierta sombra suave con una pequeña profundidad 
+el 0 se refiere al mov horizontal (no se mueve), el 4px al mov vertical (sombra baja un poquito, si, num positivo es abajo), 
+el 15px al difuminado(mientras mas grande, mas suave, mas extendida y viceversa si es mas pequeña)
+, y el rgba es el color(un negro 0 0 0 ) y el 0.1 la transparencia, loq ue hace q sea una sombra muy suave*/
 h1 {
   position: absolute;
   left: -99999999px;
@@ -277,6 +287,7 @@ a {
   width: 100%;
   border: 8px solid #967bb6;
   border-radius: 40px;
+  
 }
 
 /*SECCION labor impacto*/
