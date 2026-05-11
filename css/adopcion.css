@@ -162,6 +162,128 @@ a {
   font-size: 30px;
 }
 
+/*SECCION requisitos*/
+#requisitos-adopcion h3{font-size: 40px;
+text-align: center; padding: 30px;}
+#bloque{ background-color: #967bb6;
+border-radius: 40px;
+padding: 40px;
+display: flex;
+gap: 40px;
+align-items: center;
+justify-content: center;
+flex-wrap: wrap;
+animation: subida-elemento 1.5s ease-in-out; 
+
+
+}
+
+
+#bloque p{ font-size: 30px; max-width: 1000px; width: 100%; background-color: #a8c3b0; border-radius: 40px;
+padding: 30px; line-height: 1.8;}
+
+#bloque img{max-width: 900px; width: 100%; border-radius: 40px;
+border: 8px solid #d9a5b3 ;}
+
+
+/*SECTION  ver perros y gatos en adopcion*/
+
+#animales-adopcion{background-color: #a8c3b0;
+  border-radius: 40px;
+padding: 40px;
+display: flex;
+flex-wrap: wrap;
+gap:100px;
+justify-content: center;
+margin-top: 100px;
+}
+
+.bloque-animal{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap:30px;
+  margin-top:10px
+}
+
+.bloque-animal img{width: 100%;
+max-width: 500px;}
+
+.bloque-animal a{text-decoration: none;
+  font-size: 30px;
+  background-color: #967bb6;
+  border-radius: 40px;
+  padding:20px
+
+}
+
+
+
+/*SECTION contacto*/
+
+
+
+
+#contacto p{font-size: 30px;
+text-align: center;}
+
+#contacto h4 {
+  font-size: 40px;
+  text-align: center;
+  padding: 10px;
+  padding-top: 50px;
+}
+
+form {
+  background-color: #a8c3b0;
+  padding: 40px;
+  width: 50%;
+  max-width: 700px;
+  margin: 50px auto;
+  border-radius: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+  align-items: start;
+}
+
+form label {
+  font-size: 30px;
+}
+form input {
+  font-size: 25px;
+  border-radius: 40px;
+  border: none;
+  background-color: #fdf5e6;
+  padding: 10px;
+  width: 100%;
+  max-width: 500px;
+}
+form select {font-size: 25px;
+  border-radius: 40px;
+  border: none;
+  background-color: #fdf5e6;
+  padding: 10px;
+  width: 100%;
+  max-width: 500px;}
+
+form button {
+  font-size: 30px;
+  border-radius: 40px;
+  padding: 15px;
+  border: none;
+  background-color: #967bb6;
+  width: 100%;
+  max-width: 300px;
+  align-self: center;
+}
+
+form button:hover{cursor: pointer;}
+
+
+
+
 
 /*FOOTER */
 
