@@ -216,6 +216,7 @@ a {
 
   gap: 15px;
   box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  border: 8px solid #967bb6
 }
 
 #perfil-mascota p {
