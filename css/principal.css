@@ -102,32 +102,39 @@ importante: las divisiones del tiempo, depende de la cantidad de imagenes, este 
 @keyframes subida-elemento {
   from {
     transform: translateY(35px);
-    
   } /*al principio no se ve por el opacity 0, ya luego con opacity 1 aparece */
   to {
     transform: translate(0);
-   
   }
 }
 
-
 @keyframes boton-salton {
-  0%{transform: scale(1);}
-  50%{transform: scale(1.3);}
-    100%{transform: scale(1);}
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.3);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
-a:hover{animation: boton-salton 1s infinite;}
+a:hover {
+  animation: boton-salton 1s infinite;
+}
 
-li a:hover{background-color: #967bb6; border-radius: 40px;width: fit-content; 
-padding: 10px;}
+li a:hover {
+  background-color: #967bb6;
+  border-radius: 40px;
+  width: fit-content;
+  padding: 10px;
+}
 
 /* GENERAL BODY*/
 
-
-
 .sombra {
-  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 /* esta clase llamada sombra la agregue en ciertos bloques, le da cierta sombra suave con una pequeña profundidad 
 el 0 se refiere al mov horizontal (no se mueve), el 4px al mov vertical (sombra baja un poquito, si, num positivo es abajo), 
@@ -188,7 +195,7 @@ a {
   border-radius: 40px;
   width: 80%;
   margin: 40px auto;
-  animation: subida-elemento 1.5s ease-in-out
+  animation: subida-elemento 1.5s ease-in-out;
 }
 
 #logo-nav-slogan img {
@@ -253,8 +260,9 @@ a {
   background-color: #a8c3b0;
   padding: 40px;
   border-radius: 40px;
-  animation: subida-elemento 1.5s ease-in-out; 
-
+  animation: subida-elemento 1.5s ease-in-out;
+  width: 80%;
+  margin: 50px auto;
 }
 
 #carrusel-fotos {
@@ -287,7 +295,6 @@ a {
   width: 100%;
   border: 8px solid #967bb6;
   border-radius: 40px;
-  
 }
 
 /*SECCION labor impacto*/
@@ -543,7 +550,35 @@ form button {
   align-self: center;
 }
 
-form button:hover{cursor: pointer;}
+form button:hover {
+  cursor: pointer;
+}
+
+
+/*pseudoclases para el formulario los inputs: */
+
+form input:required:placeholder-shown {
+  border: 1.5px solid #ffa500;
+}
+
+form input:focus{ outline: none; }
+
+/*quitameos el outline q viene por defecto para q se vea el borde q le vamos a agregar */
+/*outline es contorno */
+
+
+form input:focus:invalid {
+   border: 1.5px solid #e74c3c ;
+  background-color: #e1d1d1;
+}
+
+/*input invalid si usuario escribe algo incorrecto, se pone borde rojo con fondo rojito
+FOCUS  se activa cuando el elemento recibe el foco*/
+
+input:focus:valid {
+  border: 1.5px solid #2ecc71 ;
+  background-color: #e1f2e6;
+}
 
 /*FOOTER */
 

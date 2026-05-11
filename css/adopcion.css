@@ -283,6 +283,33 @@ form button:hover{cursor: pointer;}
 
 
 
+/*pseudoclases para el formulario los inputs: */
+
+form input:required:placeholder-shown {
+  border: 1.5px solid #ffa500;
+}
+
+form input:focus{ outline: none; }
+
+/*quitameos el outline q viene por defecto para q se vea el borde q le vamos a agregar */
+/*outline es contorno */
+
+
+form input:focus:invalid {
+   border: 1.5px solid #e74c3c ;
+  background-color: #e1d1d1;
+}
+
+/*input invalid si usuario escribe algo incorrecto, se pone borde rojo con fondo rojito
+FOCUS  se activa cuando el elemento recibe el foco*/
+
+input:focus:valid {
+  border: 1.5px solid #2ecc71 ;
+  background-color: #e1f2e6;
+}
+
+
+
 
 
 /*FOOTER */
