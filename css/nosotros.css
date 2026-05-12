@@ -351,6 +351,7 @@ footer img {
   padding: 40px;
   padding-bottom: 0px;
   font-size: 15px;
+  text-align: center;
 }
   
 #logo-nav-slogan img {
@@ -414,6 +415,7 @@ footer img{  max-width: 100px;}
 flex-direction: column;
 justify-content: center;
 align-items: center;
+gap:20px
 }
 
 }

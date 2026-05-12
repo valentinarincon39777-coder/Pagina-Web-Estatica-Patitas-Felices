@@ -398,6 +398,7 @@ footer img {
   padding: 40px;
   padding-bottom: 0px;
   font-size: 15px;
+  text-align: center;
 }
   
 #logo-nav-slogan img {
@@ -505,7 +506,7 @@ align-items: center;
 form {
   background-color: #a8c3b0;
   padding: 20px;
-  width: 50%;
+  width: 80%;
   max-width: 700px;
   margin: 50px auto;
   border-radius: 40px;
