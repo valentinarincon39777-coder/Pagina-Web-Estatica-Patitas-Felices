@@ -401,4 +401,82 @@ align-items: center;
 gap:20px
 }
 
+
+
+
+
+/* PERFIL MASCOTA */
+
+#tarjeta-perfil {
+
+  width: 85%;
+  margin: 50px auto;
+  padding: 20px;
+}
+
+#foto-boton {
+  gap: 20px;
+}
+
+#foto-info {
+
+  gap: 20px;
+}
+
+#textos {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.descripcion-caracteristicas {
+
+  padding: 30px;
+
+
+
+
+  gap: 15px;
+
+}
+
+#perfil-mascota p {
+  font-size: 35px;
+  text-align: center;
+  font-weight: 600;
+  padding-top: 50px;
+}
+
+#tarjeta-perfil p {
+  font-size: 25px;
+}
+
+#tarjeta-perfil ul {
+  font-size: 20px;
+  line-height: 1.8;
+}
+
+#tarjeta-perfil img {
+  width: 100%;
+  max-width: 450px;
+  border-radius: 40px;
+}
+
+#foto-boton a {
+  text-decoration: none;
+  font-size: 25px;
+  background-color: #967bb6;
+  padding: 20px;
+  border-radius: 40px;
+}
+
+
+
+
+
+
+
+
+
+
 }

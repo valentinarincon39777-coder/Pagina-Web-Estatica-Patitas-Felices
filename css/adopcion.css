@@ -548,4 +548,62 @@ form select {font-size: 20px;
 
 
 
+/*SECCION requisitos*/
+#requisitos-adopcion h3{font-size: 20px;
+ padding: 15px;}
+#bloque{
+border-radius: 40px;
+padding: 15px;
+gap: 25px;
+
+
+}
+
+
+#bloque p{ font-size: 13px; }
+
+#bloque img{max-width: 600px; }
+
+/*SECTION  ver perros y gatos en adopcion*/
+
+#animales-adopcion{
+padding: 20px;
+
+gap:50px;
+
+margin-top: 80px;
+}
+
+.bloque-animal{
+
+  gap: 13px;
+  margin-top:10px
+}
+
+.bloque-animal img{width: 100%;
+max-width: 150px;}
+
+.bloque-animal a{text-decoration: none;
+  font-size: 16px;
+  background-color: #967bb6;
+  border-radius: 40px;
+  padding:9px
+
+}
+
+
+/*SECTION contacto*/
+
+
+
+
+#contacto p{font-size: 15px;
+text-align: center;}
+
+
+
+
+
+
+
 }
