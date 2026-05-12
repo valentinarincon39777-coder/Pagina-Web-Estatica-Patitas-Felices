@@ -372,3 +372,179 @@ footer img {
   padding-top: 40px;
   font-size: 21px;
 }
+
+
+
+/*RESPONSIVIDAD con 3 break points o media query
+*/
+
+
+
+
+/*CELULAR 
+
+
+*/
+
+@media screen  and (max-width:480px) 
+{
+
+
+  /*header*/
+#SOS {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  padding-bottom: 0px;
+  font-size: 15px;
+}
+  
+#logo-nav-slogan img {
+  max-width: 100px;
+  width: 100%;
+}
+
+#logo-nav-slogan li {
+  list-style: none;
+  font-size: 15px;
+  background-color: #a8c3b0;
+  padding: 10px;
+  border-radius: 40px;
+  width: fit-content;
+  text-align: center;
+}
+
+
+#slogan-boton a {
+  background-color: #967bb6;
+  border-radius: 40px;
+  padding: 10px;
+  font-size: 15px;
+}
+
+
+#slogan-boton h3 {
+  font-size: 20px;
+  width: 100%;
+  max-width: 750px;
+  text-align: center;
+}
+/*footer*/
+
+footer img{  max-width: 100px;}
+
+#logo-slogan h3 {
+  width: 100px;
+  font-size: 10px;
+  text-align: center;
+}
+#ubi {
+  font-size: 15px;
+}
+
+#iconos-redes li {
+  font-size: 15px;
+}
+.iconos-redes {
+  width: 60px;
+}
+
+#copyright {
+  text-align: center;
+  padding-top: 10px;
+  font-size: 10px;
+}
+
+
+#footer-info{display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+
+
+/* contacto*/
+
+
+
+#contacto h3 {
+  font-size: 25px;
+  text-align: center;
+  padding-top: 10px;
+}
+
+#links-contactos ul {
+
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style: none;
+}
+#links-contactos li {
+  background-color: #d9a5b3;
+  padding: 10px;
+  border-radius: 40px;
+}
+
+#links-contactos a {
+  text-decoration: none;
+  font-size: 15px;
+}
+
+#contacto h4 {
+  font-size: 20px;
+  text-align: center;
+  padding: 10px;
+  padding-top: 50px;
+}
+
+form {
+  background-color: #a8c3b0;
+  padding: 20px;
+  width: 50%;
+  max-width: 700px;
+  margin: 50px auto;
+  border-radius: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+  align-items: start;
+}
+
+form label {
+  font-size: 20px;
+}
+form input {
+  font-size: 15px;
+  border-radius: 40px;
+  border: none;
+  background-color: #fdf5e6;
+  padding: 10px;
+  width: 100%;
+  max-width: 500px;
+}
+
+form button {
+  font-size: 20px;
+  border-radius: 40px;
+  padding: 10px;
+  border: none;
+  background-color: #967bb6;
+  width: 100%;
+  max-width: 300px;
+  align-self: center;
+}
+#contacto p {font-size:20px ;}
+
+
+form select {font-size: 20px;
+}
+
+
+
+}

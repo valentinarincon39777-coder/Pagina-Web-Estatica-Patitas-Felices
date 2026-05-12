@@ -651,13 +651,7 @@ footer img {
 
 /*CELULAR 
 
-tamaños de texto
-paddings
-gaps
-alturas
-imágenes
-botones
-márgenes
+
 */
 
 @media screen  and (max-width:480px) {
@@ -735,6 +729,199 @@ flex-direction: column;
 justify-content: center;
 align-items: center;
 }
+
+
+
+/* contacto*/
+
+
+
+#contacto h3 {
+  font-size: 25px;
+  text-align: center;
+  padding-top: 10px;
+}
+
+#links-contactos ul {
+
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style: none;
+}
+#links-contactos li {
+  background-color: #d9a5b3;
+  padding: 10px;
+  border-radius: 40px;
+}
+
+#links-contactos a {
+  text-decoration: none;
+  font-size: 15px;
+}
+
+#contacto h4 {
+  font-size: 20px;
+  text-align: center;
+  padding: 10px;
+  padding-top: 50px;
+}
+
+form {
+  background-color: #a8c3b0;
+  padding: 20px;
+  width: 50%;
+  max-width: 700px;
+  margin: 50px auto;
+  border-radius: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+  align-items: start;
+}
+
+form label {
+  font-size: 20px;
+}
+form input {
+  font-size: 15px;
+  border-radius: 40px;
+  border: none;
+  background-color: #fdf5e6;
+  padding: 10px;
+  width: 100%;
+  max-width: 500px;
+}
+
+form button {
+  font-size: 20px;
+  border-radius: 40px;
+  padding: 10px;
+  border: none;
+  background-color: #967bb6;
+  width: 100%;
+  max-width: 300px;
+  align-self: center;
+}
+
+/*carrusel*/
+
+#carrusel-introductorio {padding: 7px;
+padding-bottom: 15px; padding-top: 1px;}
+
+/*section labor impacto*/
+
+.bloque h3 {
+  text-align: center;
+  font-size: 25px;
+}
+.bloque a {
+  text-align: center;
+  text-decoration: none;
+  font-size: 15px;
+  background-color: #a8c3b0;
+  border-radius: 40px;
+  padding: 10px;
+
+  width: fit-content;
+  /*esto es para q mis botones solo tengan de tamaño lo que ocupa el texto*/
+  align-self: center;
+  /*el align self sirve paraq ue se alinee la cajita de mi boton. el text align alinea el texto nada mas, pero yo tmb quiero el boton alineado*/
+}
+
+.bloque p,
+li {
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+.info-arriba img {
+  width: 100%;
+  max-width: 60px;
+  align-self: center;
+}
+
+.info-arriba {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+/*section testimonios*/
+
+
+
+#titulo-testimonios {
+  font-size: 20px;
+  text-align: center;
+  padding: 10px;
+  padding-top: 80px;
+}
+
+
+
+#carrusel-testimonios ul {
+  display: flex;
+  padding: 20px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+#carrusel-testimonios li {
+  list-style: none;
+}
+
+#carrusel-testimonios p {
+  max-width: 700px;
+  width: 100%;
+  line-height: 1.8;
+}
+
+
+/*section rescates*/
+
+#mosaico-rescates h3 {
+  font-size: 20px;
+  text-align: center;
+  padding-top: 100px;
+}
+
+
+
+.bloque-rescate p {
+  font-size: 15px;
+  width: 300px;
+  line-height: 1.8;
+}
+
+
+.bloque-rescate {
+  display: flex;
+
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 40px;
+  padding: 10px;
+  border: 8px solid #a8c3b0;
+  flex-wrap: wrap;
+}
+
+
+
+
+
+
+
+
 
 
 
