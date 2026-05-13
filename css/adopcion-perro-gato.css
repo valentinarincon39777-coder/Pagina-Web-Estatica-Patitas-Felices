@@ -400,7 +400,7 @@ gap:20px
   flex-direction: column;
   align-items: center;
   gap: 15px;
-  border: 8px solid #fdf5e6;
+  border: 4px solid #fdf5e6;
   border-radius: 40px;  padding: 10px;
 }
 
@@ -515,6 +515,65 @@ justify-content: center;
 align-items: center;
 gap:20px
 }
+
+
+
+
+/*SECTION GRID perros-gatos*/
+
+#grid-perros-gatos {
+  padding: 10px;
+
+  width: 90%;
+
+ ;
+
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.tarjeta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  border: 4px solid #fdf5e6;
+  border-radius: 40px;  padding: 10px;
+}
+
+.tarjeta p {
+  font-size: 30px;
+  font-weight: 600;
+}
+.tarjeta img {
+  max-width: 250px;
+  width: 100%;
+
+}
+
+.tarjeta ul {
+  background-color: #a8c3b0;
+  padding: 10px;
+  border-radius: 40px;
+   max-width: 300px;
+  width: 100%;
+  text-align: center;
+  line-height: 1.8;
+}
+
+.tarjeta li {
+
+
+  font-size: 15px;
+ 
+}
+.tarjeta a { font-size: 20px; padding: 15px
+}
+
+
+
+
 
 
 }

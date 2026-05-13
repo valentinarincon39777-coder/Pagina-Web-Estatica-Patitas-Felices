@@ -694,37 +694,16 @@ gap:20px
 
 
 
-#contacto h3 {
-  font-size: 25px;
-  text-align: center;
-  padding-top: 10px;
-}
 
-#links-contactos ul {
-
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
-  justify-content: center;
-  flex-wrap: wrap;
-  list-style: none;
-}
-#links-contactos li {
-  background-color: #d9a5b3;
-  padding: 10px;
-  border-radius: 40px;
-}
-
-#links-contactos a {
-  text-decoration: none;
-  font-size: 15px;
-}
 
 #contacto h4 {
   font-size: 20px;
   text-align: center;
   padding: 0px;
   padding-top: 30px;
+}
+
+#contacto p{font-size: 17px;
 }
 
 form {
@@ -765,6 +744,61 @@ form button {
   align-self: center;
 
 
-  
+
 }
+
+
+
+
+/*SECCION requisitos*/
+#requisitos-adopcion h3{font-size: 20px;
+ padding: 15px;}
+#bloque{
+border-radius: 40px;
+padding: 15px;
+gap: 25px;
+
+
+}
+
+
+#bloque p{ font-size: 13px; }
+
+#bloque img{max-width: 400px; }
+
+/*SECTION  ver perros y gatos en adopcion*/
+
+#animales-adopcion{
+padding: 20px;
+
+gap:50px;
+
+margin-top: 80px;
+}
+
+.bloque-animal{
+
+  gap: 13px;
+  margin-top:10px
+}
+
+.bloque-animal img{width: 100%;
+max-width: 150px;}
+
+.bloque-animal a{text-decoration: none;
+  font-size: 16px;
+  background-color: #967bb6;
+  border-radius: 40px;
+  padding:9px
+
+}
+
+
+
+
+
+
+
+
+
 }

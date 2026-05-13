@@ -596,6 +596,9 @@ form button {
 
 
 /*SECCION historia*/
+
+
+
 #donacion-voluntariado h3{font-size: 20px;}
 
 #bloque{ background-color: #967bb6;
@@ -817,4 +820,74 @@ form button {
   max-width: 300px;
   align-self: center;
 }
+
+
+
+/*SECCION historia*/
+#donacion-voluntariado h3{font-size: 20px;}
+
+#bloque{ 
+padding: 30px;
+
 }
+
+
+#bloque p{ font-size: 13px; 
+padding:15px;}
+
+#bloque img{ max-width: 370px; }
+
+/*SECCION bloques paralelos */
+
+#bloques-donacion-voluntariado {
+
+  width: 80%;
+
+}
+
+/*flex 1 lo q hace es: que ambos bloques ocupen el mismo espacio, mismo tamañno, mismo ancho*/
+/*flex 1 hace magia: hace q un bloque crezca para ocupar el espacio disponible. si tienes dos cajas(como es el caso con labor impacto) ambas ocupan espacio EQUITATIVAMENTE
+si tenemos por ejemplo dos cajas pero queremos que una de ellas ocupe el doble de espacio a esa le ponemos flex:2 y a la otras flex:1 */
+.bloque h3 {
+  text-align: center;
+  font-size: 20px;
+}
+.bloque a {
+  text-align: center;
+  text-decoration: none;
+  font-size: 30px;
+  background-color: #a8c3b0;
+  border-radius: 40px;
+  padding: 20px;
+
+  width: fit-content;
+  /*esto es para q mis botones solo tengan de tamaño lo que ocupa el texto*/
+  align-self: center;
+  /*el align self sirve paraq ue se alinee la cajita de mi boton. el text align alinea el texto nada mas, pero yo tmb quiero el boton alineado*/
+}
+
+.bloque p,
+li {
+  font-size: 13px;
+}
+
+.info-arriba img {
+  width: 100%;
+  max-width: 70px;
+  align-self: center;
+}
+
+.info-arriba {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+#bloques-donacion-voluntariado {display: flex;
+flex-direction: column;}
+
+
+}
+
+
