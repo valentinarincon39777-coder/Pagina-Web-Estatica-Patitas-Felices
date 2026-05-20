@@ -193,9 +193,13 @@ a {
 
 #foto-info {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmaX(300px, 1fr));
   gap: 40px;
 }
+
+/*grid q se adapta sola al tamaño de la pantalla. EL "AUTO FIT" le dice al navegador, mete tantas columnas
+como quepan segun el ancho posible
+el "MIN MAX"  establece los limites de tamaño para cada columna. Tiene q ser: MINIMO 300PX y MAXIMO 1FR*/
 
 #textos {
   display: flex;

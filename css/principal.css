@@ -67,10 +67,14 @@ padding
 luego, en 20% (o sea durante el 20% inicial del tiempo) la image sigue quieta, o sea que el usuario alcanzara a verla
 Despues llega 25% y la fila completa se mueve 100% hacia la izquierda (por ello el - para 100%) entonces aparece la imagen 2.
 Cada imagen va a ocupar el ancho completo del carrusel visible y por eso vemos 0% imagen 1 , -100% imagen 2, -200% imagen 3 y así ...
-importante notar que la trancision tiene movimientos y pausas, durante los 5% de tiempo intercalados entre cada imagen ocurre la transicion, luego se queda quieta para mostrar la siguiente.
+importante notar que la trancision tiene movimientos y pausas, durante los 5% de tiempo intercalados entre cada imagen ocurre la transicion, 
+luego se queda quieta para mostrar la siguiente.
 ahora, pq margin left? por que tenemos q mover toooda la fila de imagenes horizontalemnete, entonces empuja la fila hazia la IZQUIERDA 
-usualmente margin left agregaria espacio a la izquierda si hacemos margin-left:20px, PERO aca estamos usando valores negativos entonces el elemento es el q se meueve a la izquierda(hay q imaginar que es un plano cartesiano y el punto (0,0) esta en el elemento, entonces si le ponemos la coordenada -100 pss la imagen se mueve a -100 y sale del plano de vision)
-importante: las divisiones del tiempo, depende de la cantidad de imagenes, este keyframe justo como lo tengo funciona para 4 imagenes, peor para 5 tendria q ajustar las divisiones, habria más divisiones
+usualmente margin left agregaria espacio a la izquierda si hacemos margin-left:20px, PERO aca estamos usando valores negativos entonces el elemento es el 
+q se meueve a la izquierda(hay q imaginar que es un plano cartesiano y el punto (0,0) esta en el elemento, entonces si le ponemos la coordenada -100 pss la 
+imagen se mueve a -100 y sale del plano de vision)
+importante: las divisiones del tiempo, depende de la cantidad de imagenes, este keyframe justo como lo tengo funciona para 4 imagenes, peor para 5 tendria q ajustar 
+las divisiones, habria más divisiones
  */
 
 @keyframes sliding2 {
@@ -303,8 +307,8 @@ a {
   display: flex;
   flex-direction: row;
   gap: 40px;
-  justify-content: space-between;
-  align-items: stretch;
+   justify-content: space-between;
+  align-items: stretch; /* AL FINAL NO HIZO FALTA Su función principal es estirar los elementos hijos para que ocupen todo el espacio disponible a lo largo del eje cruzado*/
   margin: auto;
   padding: 60px 0;
   width: 75%;
@@ -319,7 +323,8 @@ a {
   flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: space-between; /* space beetween a ambos les de el diferente espacio entre cada elemento para que se vea simetrico, sin esto el boton de "donar ahora" quedaria mas arriba*/
+    justify-content: space-between; 
+/* space beetween a ambos les de el diferente espacio entre cada elemento para que se vea simetrico, sin esto el boton de "donar ahora" quedaria mas arriba*/
 
   gap: 25px;
   font-size: 20px;
@@ -523,8 +528,10 @@ form {
   flex-direction: column;
   gap: 30px;
   justify-content: center;
-  align-items: start;
+  align-items: start; 
+ /*sirve para alinear los elementos al inicio de ese eje cruzado.*/
 }
+
 
 form label {
   font-size: 30px;
