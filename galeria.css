@@ -243,34 +243,61 @@ a {
   border-radius: 30px;
 }
 
-/*responsividad de la galeria general:
-tiene que pasar de tener 3 columnas 
-a tener 2 columnas para TABLET */
-@media screen  and (max-width:1000px)
-{
 
-    
-#galeria-general ul {
-  display: grid;
-  width: 100%;
-  background-color: #d9a5b3;
-  padding: 10px;
 
-  border-radius: 40px;
-
-  margin: 50px auto;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 40px;
-
+/*SECTION testimonios*/
+#titulo-testimonios {
+  font-size: 40px;
+  text-align: center;
+  padding: 40px;
+  padding-top: 80px;
 }
 
-#galeria-general li {
+#testimonios {
+
+  background-color: #a8c3b0;
+  border-radius: 40px;
+}
+
+#carrusel-testimonios {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+
+  height: auto;
+}
+
+#carrusel-testimonios ul {
+  display: flex;
+  padding: 60px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+#carrusel-testimonios li {
   list-style: none;
 }
 
-    
+#carrusel-testimonios p {
+  max-width: 600px;
+  width: 100%;
+  line-height: 1.8;
+  font-size: 25px;
 }
+
+#carrusel-testimonios li img {
+  border-radius: 40px;
+  border: 8px solid #967bb6;
+  width: 100%;
+}
+
  
+
+
 
 
 /*FOOTER */
@@ -332,4 +359,183 @@ footer img {
   text-align: center;
   padding-top: 40px;
   font-size: 21px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*responsividad de la galeria general:
+tiene que pasar de tener 3 columnas 
+a tener 2 columnas para TABLET */
+@media screen  and (max-width:1000px)
+{
+
+    /*RESPONSIVIDAD HEADER Y FOOTER*/
+    
+  /*header*/
+#SOS {
+  text-align: center;
+  padding: 40px;
+  padding-bottom: 0px;
+  font-size: 15px;
+  text-align: center;
+}
+  
+#logo-nav-slogan img {
+  max-width: 100px;
+  width: 100%;
+}
+
+#logo-nav-slogan li {
+  list-style: none;
+  font-size: 15px;
+  background-color: #a8c3b0;
+  padding: 10px;
+  border-radius: 40px;
+  width: fit-content;
+  text-align: center;
+}
+
+
+#slogan-boton a {
+  background-color: #967bb6;
+  border-radius: 40px;
+  padding: 10px;
+  font-size: 15px;
+}
+
+
+#slogan-boton h3 {
+  font-size: 18px;
+  width: 100%;
+  max-width: 750px;;
+}
+/*footer*/
+
+footer img{  max-width: 100px;}
+
+#logo-slogan h3 {
+  width: 100px;
+  font-size: 10px;
+  text-align: center;
+}
+#ubi {
+  font-size: 15px;
+}
+
+#iconos-redes li {
+  font-size: 15px;
+}
+.iconos-redes {
+  width: 60px;
+}
+
+#copyright {
+  text-align: center;
+  padding-top: 10px;
+  font-size: 10px;
+}
+
+
+#footer-info{display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap:20px
+}
+
+
+
+
+
+
+
+    /*RESPONSIVIDAD EXAMEN*/
+
+    
+#examen {
+  padding: 10px;
+}
+
+#examen h2 {
+  font-size: 30px;
+ 
+}
+
+#links {
+
+  padding-bottom: 75px;
+
+}
+
+#links a {
+  
+  font-size: 25px;
+  padding: 20px;
+  border-radius: 40px;
+}
+
+    
+#galeria-general ul {
+  display: grid;
+  width: 100%;
+  background-color: #d9a5b3;
+  padding: 10px;
+
+  border-radius: 40px;
+
+  margin: 50px auto;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+
+}
+
+
+/*responsividad testimonios*/
+#carrusel-testimonios {
+  width: 80%;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+
+  height: auto;
+}
+
+
+
+#carrusel-testimonios li img {
+  border-radius: 40px;
+  border: 8px solid #967bb6;
+  width: 100%;
+  max-width: 500px;
+}
+
+
+
+#carrusel-testimonios p {
+  max-width: 600px;
+  width: 100%;
+  line-height: 1.8;
+  font-size: 20px;
+}
 }
